@@ -7,10 +7,10 @@ jobs:
     steps:
       - run: |
         npm run build
-        echo ${{ job.status }}
+        echo "${{ job.status }}"
   lint:
     runs-on: ubuntu-latest
     steps:
       - run: |
         npm run lint
-        echo ${{ job.status }}
+        echo "${{ job.status }}"
