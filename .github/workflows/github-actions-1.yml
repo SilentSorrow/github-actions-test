@@ -5,12 +5,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        npm run build
-        echo "hello"
+      - run: npm run build
   lint:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        npm run lint
-        echo "hello"
+      - run: npm run lint
