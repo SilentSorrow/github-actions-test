@@ -1,0 +1,16 @@
+name: GitHub Actions Test
+on: 
+  - push:
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        npm run build
+        echo ${{ job.status }}
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        npm run lint
+        echo ${{ job.status }}
